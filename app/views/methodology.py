@@ -182,9 +182,8 @@ def render(ctx):
         "~/workspace/monsoonai-venv/bin/python src/evaluate_models.py\n"
         "```\n"
         "- **Run this dashboard locally:** see docs/local-setup.md "
-        "(or app/README.md). No deployment has been done — the app runs "
-        "on your own machine only until deployment is separately approved "
-        "and verified.")
+        "(or app/README.md). Live app: https://fwtxks2v8xg52fjamdbxfj.streamlit.app/ "
+        "(Streamlit Community Cloud, verified live 9 November 2026).")
     info_box(
         "Interview explanation, in one sentence: “I predicted next-day "
         "Mumbai rainfall from the last 8 days of reanalysis weather, "

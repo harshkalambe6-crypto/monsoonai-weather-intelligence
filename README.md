@@ -4,7 +4,7 @@
 
 MONSOONAI is a machine learning project that predicts next-day rainfall for Mumbai, India, from historical weather data — and evaluates itself honestly. It is an educational and research-oriented tool, built as a portfolio project. It is **not** an operational weather forecast and **not** a warning system.
 
-**Status: the dashboard is built and tested locally. Deployment is pending — there is no live URL yet.**
+**Status: live — the dashboard is deployed on Streamlit Community Cloud: https://fwtxks2v8xg52fjamdbxfj.streamlit.app/ (verified live 9 November 2026).**
 
 ## Project overview
 
