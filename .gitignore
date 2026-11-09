@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+*.log
+
+# Raw data — never committed (see docs/data-sources.md for the
+# exact download commands to reproduce them). The IMD .grd binary
+# must not be redistributed; the hourly Open-Meteo file is large
+# and is only an intermediate for daily means.
+data/raw/
+
+# Secrets (Streamlit Cloud uses its own secrets store; nothing
+# secret is needed to run this project, and no key is committed)
+.streamlit/secrets.toml
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Playwright / screenshot working files (large, regenerable)
+tests/.playwright/
+*.png.tmp

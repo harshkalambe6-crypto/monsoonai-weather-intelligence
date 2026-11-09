@@ -1,0 +1,14 @@
+# MONSOONAI — pinned dependencies (Python 3.12).
+# Versions match the environment Phases 2-4 were run and tested in.
+# Seaborn is deliberately NOT listed: no project code imports it.
+# Playwright is deliberately NOT listed: it is only a local
+# screenshot tool (tests/screenshot.py), not a runtime dependency.
+streamlit==1.67.0
+plotly==7.1.0
+pandas==3.1.1
+numpy==2.5.4
+scikit-learn==1.9.1
+joblib==1.6.0
+matplotlib==3.11.2
+scipy==1.18.1
+requests==2.34.2

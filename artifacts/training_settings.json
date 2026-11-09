@@ -1,0 +1,104 @@
+{
+  "random_state": 42,
+  "splits": {
+    "train": "2000-01-01 to 2017-12-31",
+    "validation": "2018-01-01 to 2020-12-31",
+    "test": "2021-01-01 to 2024-12-31"
+  },
+  "input_window": "t-7..t (widened in Phase 3; see src/features.py)",
+  "rainy_day_mm": 2.5,
+  "heavy_mm": 64.5,
+  "days_since_rain_cap": 30,
+  "climatology": "day-of-year mean rainfall from TRAINING data only",
+  "rf_regressor_grid": [
+    "{'max_depth': 10, 'n_estimators': 200}",
+    "{'max_depth': 10, 'n_estimators': 400}",
+    "{'max_depth': None, 'n_estimators': 200}",
+    "{'max_depth': 20, 'n_estimators': 200}",
+    "{'max_depth': None, 'n_estimators': 400}",
+    "{'max_depth': 20, 'n_estimators': 400}"
+  ],
+  "rf_regressor_best": {
+    "max_depth": 10,
+    "n_estimators": 200
+  },
+  "rf_regressor_validation_mae_mm": 3.911,
+  "linear_regression_validation_mae_mm": 4.878,
+  "rf_classifier_grid_f1": [
+    [
+      0.9154,
+      {
+        "max_depth": 10,
+        "n_estimators": 400
+      }
+    ],
+    [
+      0.9139,
+      {
+        "max_depth": 10,
+        "n_estimators": 200
+      }
+    ],
+    [
+      0.9129,
+      {
+        "max_depth": null,
+        "n_estimators": 200
+      }
+    ],
+    [
+      0.9129,
+      {
+        "max_depth": 20,
+        "n_estimators": 200
+      }
+    ],
+    [
+      0.9127,
+      {
+        "max_depth": null,
+        "n_estimators": 400
+      }
+    ],
+    [
+      0.9114,
+      {
+        "max_depth": 20,
+        "n_estimators": 400
+      }
+    ]
+  ],
+  "rf_classifier_best": {
+    "max_depth": 10,
+    "n_estimators": 400
+  },
+  "feature_columns": [
+    "rain_t",
+    "rain_t1",
+    "rain_t2",
+    "rain_t3",
+    "rain_t7",
+    "rain_roll3_sum",
+    "rain_roll3_mean",
+    "rain_roll7_sum",
+    "rain_roll7_mean",
+    "days_since_rain",
+    "rainy_days_last7",
+    "temp_max_t",
+    "temp_min_t",
+    "temp_mean_t",
+    "temp_mean_3d",
+    "humidity_t",
+    "humidity_3d",
+    "pressure_t",
+    "pressure_change_3d",
+    "wind_max_t",
+    "wind_dir_sin",
+    "wind_dir_cos",
+    "doy_sin",
+    "doy_cos",
+    "month",
+    "is_monsoon",
+    "climatology_doy"
+  ]
+}

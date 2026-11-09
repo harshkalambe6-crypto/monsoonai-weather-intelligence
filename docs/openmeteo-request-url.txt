@@ -1,0 +1,2 @@
+https://archive-api.open-meteo.com/v1/archive?latitude=19.0760&longitude=72.8777&start_date=2000-01-01&end_date=2024-12-31&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,rain_sum,precipitation_hours,wind_speed_10m_max,wind_direction_10m_dominant,wind_gusts_10m_max,shortwave_radiation_sum&timezone=Asia%2FKolkata&format=csv
+https://archive-api.open-meteo.com/v1/archive?latitude=19.0760&longitude=72.8777&start_date=2000-01-01&end_date=2024-12-31&hourly=temperature_2m,relative_humidity_2m,pressure_msl,surface_pressure&timezone=Asia%2FKolkata&format=csv

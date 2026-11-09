@@ -1,0 +1,13 @@
+# MONSOONAI dashboard — pinned dependencies (Python 3.12).
+# Install into the project venv: pip install -r app/requirements.txt
+# Versions match the environment Phases 2-3 were run in, plus the
+# dashboard-only additions (streamlit, plotly, requests).
+streamlit==1.67.0
+plotly==7.1.0
+pandas==3.1.1
+numpy==2.5.4
+scikit-learn==1.9.1
+joblib==1.6.0
+matplotlib==3.11.2
+scipy==1.18.1
+requests==2.34.2
