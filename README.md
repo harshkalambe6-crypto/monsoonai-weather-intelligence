@@ -201,7 +201,7 @@ Expected output: `ALL CHECKS PASSED`. `tests/screenshot.py` captures the dashboa
 
 ## Limitations
 
-- **Deployment is pending.** Nothing is hosted yet; the dashboard runs locally.
+- **Deployment is live.** The dashboard is hosted on Streamlit Community Cloud: https://fwtxks2v8xg52fjamdbxfj.streamlit.app/ (verified live 9 November 2026).
 - **Data ends 31 December 2024.** The Open-Meteo archive now reaches 31 December 2025. Refreshing requires re-running the Phase 2 pipeline and re-training; the dashboard reports this and does not auto-refresh.
 - **Reanalysis is not observation.** All model metrics are against Open-Meteo/ERA5 reanalysis. Reanalysis underestimates IMD gauge totals by about 22% (2020) and smooths localised extremes, so real-world gauge skill is expected to be lower, especially for heavy rain.
 - **One grid cell, not a gauge.** "Mumbai rainfall" here means the ~25 km grid cell containing Mumbai. Neighbourhood-level extremes cannot be resolved.
@@ -225,4 +225,4 @@ Expected output: `ALL CHECKS PASSED`. `tests/screenshot.py` captures the dashboa
 - LinkedIn: https://www.linkedin.com/in/harsh-kalambe-238765446/
 - GitHub: https://github.com/harshkalambe6-crypto
 
-Built as a portfolio project, with the aim of demonstrating Python programming, data analysis, statistical understanding, machine learning, time-series analysis, data visualisation and technical documentation — and of being able to explain every step of it in an interview.
+Built as a portfolio project, with the aim of demonstrating Python programming, data analysis, statistical understanding, machine learning, time-series analysis, data visualisation and technical documentation. I directed the project scope, reviewed the methodology and validated the results.
